@@ -1,5 +1,4 @@
 # Sunset-3
 animated outrun sunset 3d thing in processing
 
-
-![example](https://imgur.com/a/2Pue5lF)
+https://i.imgur.com/x70Z9Iy.mp4
