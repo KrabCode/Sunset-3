@@ -8,6 +8,17 @@ import processing.opengl.PShader;
 // https://www.youtube.com/watch?v=IKB1hWWedMk
 
 public class MainApp extends PApplet{
+
+
+    public static void main(String[] args) {
+        PApplet.main("MainApp");
+    }
+
+    public void settings() {
+        fullScreen(P3D, 1);
+//        size(1920,1080, P3D);
+    }
+
     PShader frag;
     PShader line;
     PShader sun;
@@ -26,18 +37,9 @@ public class MainApp extends PApplet{
 
     int sunDetail = 30;
     int orbDetail= 4;
-    public static void main(String[] args) {
-        PApplet.main("MainApp");
-    }
-
     float mx;
     float my;
     boolean rolling;
-
-    public void settings() {
-//        fullScreen(P3D, 1);
-        size(1500,850, P3D);
-    }
 
     public void setup() {
         fx = new PostFX(this);
@@ -61,14 +63,14 @@ public class MainApp extends PApplet{
     public void keyPressed() {
         super.keyPressed();
         rolling = !rolling;
-        save("outrunsun-"+frameCount+".png");
+//        save("outrunsun-"+frameCount+".png");
     }
 
     public void draw() {
         //mx = map(mouseX, 0, width, -TWO_PI, TWO_PI);
         //my = map(mouseY, 0, height,0, 50);
         rotateY(mx);
-        println(mx+":"+my);
+
         if(rolling){
 //            save("outrunsun-"+frameCount+".png");
         }
