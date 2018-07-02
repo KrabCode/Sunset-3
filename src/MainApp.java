@@ -61,6 +61,7 @@ public class MainApp extends PApplet{
     public void keyPressed() {
         super.keyPressed();
         rolling = !rolling;
+        save("outrunsun-"+frameCount+".png");
     }
 
     public void draw() {
