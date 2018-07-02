@@ -22,7 +22,7 @@ public class MainApp extends PApplet{
     float[][] tmp;
 
     float mouseForce = 250;
-    float damping = .9478646f;
+    float damping = .9278646f;
 
     int sunDetail = 30;
     int orbDetail= 4;
@@ -35,8 +35,8 @@ public class MainApp extends PApplet{
     boolean rolling;
 
     public void settings() {
-        fullScreen(P3D, 1);
-//        size(800,600, P3D);
+//        fullScreen(P3D, 1);
+        size(1500,850, P3D);
     }
 
     public void setup() {
@@ -91,8 +91,8 @@ public class MainApp extends PApplet{
 //            b1[centerX+off][y] =  cos(radians((frameCount*40+y*75)%360))*1050;
 //            b1[centerX+of][y]=1000*noise((y+off)*my, radians(frameCount*47));
         //}
-        b1[centerX-off+5*round(.5f+.5f*sin(radians(frameCount)))][rows-2] =  sin(radians((frameCount*40)%360))*850;
-
+        b1[centerX-off+2*round(.5f+.5f*sin(radians(frameCount)))][rows-2] =  sin(radians((frameCount*40)%360))*850;
+        b1[centerX+off-2*round(.5f+.5f*sin(radians(frameCount)))][rows-2] =  sin(radians((frameCount*40)%360))*850;
 
         if(mousePressed){
             int x = mouseX*sizeMod/scl;
