@@ -17,6 +17,5 @@ void main(){
     vec2 uv = gl_FragCoord.xy / resolution.xy;
     float pct = abs(1.-uv.y*1.8);
     vec3 color = mix(colorA, colorB, pct);
-
-    gl_FragColor = vec4(color,1.);
+    gl_FragColor = vec4(color, 1.);
 }
