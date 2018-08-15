@@ -19,16 +19,8 @@
       <root url="jar://$PROJECT_DIR$/../processing-3.3.7/core/library/jogl-all-natives-windows-i586.jar!/" />
       <root url="jar://$PROJECT_DIR$/../processing-3.3.7/core/library/jogl-all.jar!/" />
       <root url="jar://$PROJECT_DIR$/data/PostFX.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../Processing/libraries/minim/library/jl1.0.1.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../Processing/libraries/minim/library/jsminim.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../Processing/libraries/minim/library/minim.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../Processing/libraries/minim/library/mp3spi1.9.5.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../Processing/libraries/minim/library/tritonus_aos.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../Processing/libraries/minim/library/tritonus_share.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../Processing/libraries/minim/library/jl1.0.1.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>
