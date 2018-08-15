@@ -7,7 +7,7 @@ uniform float time;
 uniform float mX;
 uniform float mY;
 
-varying vec4 vertColor;
+
 #define PROCESSING_LINE_SHADER
 
 vec3 colorA = vec3(1.0,0.0,0.0);
@@ -21,5 +21,6 @@ void main(){
     if(d<.5f){
        //color = vec3(0);
     }
+
     gl_FragColor = vec4(color, 1.);
 }
